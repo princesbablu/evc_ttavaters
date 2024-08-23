@@ -1,0 +1,55 @@
+.about-slider-area {
+    // padding: 32px 16px;
+//    padding-top: 32px;
+padding-bottom: 48px;
+// margin-top: -16px;
+    @extend .position-relative;
+    @extend .z-1;
+    transform: translateX(-100px);
+    // margin-bottom: 40px;
+
+
+    @media screen and (max-width: 991px) {
+        transform: translateX(0);
+    }
+
+    &:after {
+        content: "";
+        margin-top: -40px;
+        margin-left: -56px;
+        // padding: 25px;
+        @extend .position-absolute;
+        @extend .top-0;
+        @extend .start-0;
+        @extend .h-100;
+        @extend .w-100;
+        background: linear-gradient(90deg, rgba(14, 11, 28, 0.7) -1.29%, rgba(43, 40, 51, 0) 80.59%);
+        height:  400px;
+        width: 798px;
+        opacity: 0.75;
+        backdrop-filter: blur(8px);
+        border-radius: 16px;
+        @extend .z-n1;
+    }
+
+}
+
+.nft-scrollbar {
+    height: 6px;
+    border-radius: 6px;
+    background-color: rgba(#84807F, .2);
+
+    .swiper-scrollbar-drag {
+        @extend .bg-gradient;
+
+        &:first-child {
+            display: none;
+        }
+    }
+}
+
+.overflow-swiper {
+    .swiper {
+        overflow:None;
+    }
+}

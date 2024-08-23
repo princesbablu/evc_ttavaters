@@ -1,0 +1,16 @@
+<svg width="823" height="1480" viewBox="0 0 823 1480" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_f_1_923)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M122.336 500.689C165.892 495.787 213.126 517.485 240.713 551.607C266.941 584.048 246.324 633.608 261.297 672.568C274.848 707.828 319.529 727.364 322.727 765.011C326.05 804.134 298.375 837.788 278.189 871.443C254.125 911.564 240.489 978.323 193.798 979.973C142.143 981.798 130.445 892.257 80.6363 878.423C29.4303 864.201 -25.5919 929.615 -73.1324 905.833C-117.257 883.76 -128.833 821.988 -130.869 772.619C-132.818 725.352 -112.833 679.214 -84.024 641.731C-58.5642 608.605 -14.5751 600.018 19.8978 576.456C55.684 551.997 79.2855 505.533 122.336 500.689Z" fill="url(#paint0_linear_1_923)"/>
+</g>
+<defs>
+<filter id="filter0_f_1_923" x="-631" y="0" width="1454" height="1480" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="250" result="effect1_foregroundBlur_1_923"/>
+</filter>
+<linearGradient id="paint0_linear_1_923" x1="323" y1="740" x2="-143.382" y2="740" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1440DB"/>
+<stop offset="1" stop-color="#1E6AFF"/>
+</linearGradient>
+</defs>
+</svg>

@@ -1,0 +1,51 @@
+.dash-connect {
+    @extend .position-fixed;
+    @extend .top-0;
+    @extend .start-0;
+    @extend .h-100;
+    @extend .w-100;
+    @extend .d-flex;
+    @extend .align-items-center;
+    @extend .justify-content-center;
+    background-image: url('../../../../../src/assets/img/dashboard/connect/blur-bg.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    &:after {
+        @extend .position-absolute;
+        @extend .top-0;
+        @extend .start-0;
+        @extend .h-100;
+        @extend .w-100;
+        content: "";
+        background: rgba(3, 3, 5, 0.9);
+    }
+}
+
+.connect-options {
+    background: #101015;
+    border-radius: 12px;
+    padding: 28px;
+    width: 360px;
+
+    @media screen and (max-width: 480px) {
+        width: 300px;
+    }
+
+    a {
+        @extend .d-flex;
+        @extend .gap-3;
+        @extend .rounded;
+        @extend .align-items-center;
+        @extend .fw-semibold;
+        @extend .link-light;
+        padding: 12px;
+        border: 1px solid #1A1A22;
+        width: 100%;
+
+        &:hover {
+            background-color: #1A1A22;
+        }
+    }
+}

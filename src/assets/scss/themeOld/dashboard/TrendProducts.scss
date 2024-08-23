@@ -1,0 +1,66 @@
+
+//Trends product design 
+
+
+
+.trendproduct-card {
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  background-color: #2E2D31  ;
+  text-align: center;
+ 
+}
+
+.trendproduct-card-img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  color: white;
+}
+
+.trendproduct-card-img-top {
+  height: 100%;
+  object-fit: cover;
+  padding: 10px;
+  width: 100%;
+}
+
+.trendproduct-card-body {
+  padding: 10px;
+//   display: grid;
+//   justify-content: center !important;
+//   align-items: center !important;
+}
+
+
+.trendproduct-card-title {
+    margin-top: 75px !important;
+    margin: auto;
+    color: "white";
+    padding: 11px;
+    // width: 78%;
+    height: 60%;
+    border-radius: 11px;
+}
+
+
+.trendproduct-card-text {
+  font-size: 0.9rem;
+  color: #666;
+  @media screen and (max-width: 991px) {
+    font-size: 1.6rem ;
+  }
+  
+}
+
+.btn-primary {
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+}

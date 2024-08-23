@@ -1,0 +1,20 @@
+.theme-hero {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color:#201F24 ;
+    background-image: url('../../../img/regular/herobg.svg');
+    
+}
+@media (max-width: 992px) {
+    .theme-hero {
+        padding-top: 0px; /* Adjust this value as needed */
+    }
+}
+
+@media (max-width: 991.98px) {
+    .custom-height {
+      min-height: 0vh; /* Adjust the height as needed */
+      padding-top: 100px;
+    }
+  }
+  

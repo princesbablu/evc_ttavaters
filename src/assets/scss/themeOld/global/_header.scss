@@ -1,0 +1,72 @@
+// Navbar
+.navbar {
+    --bs-navbar-toggler-focus-width: 0;
+    --bs-navbar-toggler-padding-x: 8px;
+    --bs-navbar-toggler-padding-y: 12px;
+    --bs-navbar-padding-y: 10px;
+    --bs-navbar-nav-link-padding-x: 20px;
+    --bs-navbar-color: #201F24;
+    --bs-navbar-hover-color: #201F24;
+
+    &.sticky-navbar {
+        --bs-navbar-padding-y: 6px;
+        // background-color: transparent;
+    }
+
+    // @extend .transition-1;
+
+    @media screen and (max-width: 479px) {
+        .btn-primary {
+            --bs-btn-padding-x: 10px;
+            --bs-btn-padding-y: 6px;
+            // background-image: linear-gradient(149.3deg, #02DB5B -29.94%, #4977C1 135.03%);
+
+        }
+    }
+}
+
+.navbar-toggler {
+    --bs-border-width: 0;
+
+    &:hover {
+        .line {
+            &:last-child {
+                width: 24px;
+            }
+        }
+    }
+
+    .line {
+        @extend .d-block;
+        @extend .transition-1;
+        background-color: var(--bs-body-color);
+        height: 2px;
+        width: 24px;
+
+        &:not(:last-child) {
+            margin-bottom: 5px;
+        }
+
+        &:last-child {
+            width: 18px;
+            margin-left: auto;
+        }
+    }
+}
+
+// Navbar Brand x Logo
+.navbar-brand {
+    max-width: 240px;
+
+    // @media screen and (max-width: 1199px) {
+    //     max-width: 200px;
+    // }
+
+    // @media screen and (max-width: 991px) {
+    //     max-width: 160px;
+    // }
+
+    // @media screen and (max-width: 768px) {
+    //     max-width: 120px;
+    // }
+}

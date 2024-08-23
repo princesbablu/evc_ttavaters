@@ -1,0 +1,56 @@
+.tokenomics {
+    &-chart {
+        @extend .position-relative;
+
+        &:after {
+            content: "";
+            @extend .position-absolute;
+            @extend .top-50;
+            @extend .start-50;
+            @extend .translate-middle;
+            background: linear-gradient(126.52deg, #F1FF50 13.38%, #C9D826 81.35%);
+            height: 230px;
+            width: 230px;
+            border-radius: 50%;
+
+            @media screen and (max-width: 575px) {
+                width: 130px;
+                height: 130px;
+            }
+
+            @media screen and (max-width: 480px) {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        .apexcharts-tooltip {
+            color: #000000;
+        }
+    }
+
+    &-legends {
+        li {
+            &:not(:last-child) {
+                margin-bottom: 16px;
+            }
+
+            div {
+                width: 75px;
+                height: 50px;
+                @extend .d-flex;
+                @extend .align-items-center;
+                @extend .justify-content-center;
+                @extend .text-dark;
+                @extend .fw-semibold;
+                @extend .rounded-2;
+                @extend .flex-shrink-0;
+
+                @media screen and (max-width: 767px) {
+                    width: 60px;
+                    height: 44px;
+                }
+            }
+        }
+    }
+}

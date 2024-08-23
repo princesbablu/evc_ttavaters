@@ -1,0 +1,459 @@
+.dash-content-area {
+  padding: 14px;
+  // padding-top: 0;
+  justify-content: space-between;
+
+  @media screen and (min-height: 767px) {
+    padding: 12px;
+  }
+}
+
+.dash-content-area-shree {
+  padding: 14px;
+  // padding-top: 0;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1000px) {
+  .dash-content-area-shree {
+    padding: 0 70px;
+  }
+}
+.ac-container.svelte-1nua59o {
+  display: none !important;
+  flex-flow: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.css-18lrjg1-MuiCircularProgress-root {
+  display: inline-block;
+  color: #25a98e !important;
+  -webkit-animation: animation-61bdi0 1.4s linear infinite;
+  animation: animation-61bdi0 1.4s linear infinite;
+}
+
+.dash-global-wrap {
+  padding: 25px;
+  justify-content: space-between;
+  background: #2c2c31;
+  border-radius: 16px;
+  @media screen and (max-width: 767px) {
+    padding: 16px;
+  }
+}
+
+.evc-rank {
+  padding: 24px 12px;
+  border-radius: 16px;
+  background-color: transparent;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    border-radius: inherit;
+    background: transparent;
+    border: 0px;
+  }
+
+  &-top {
+    border-radius: 8px;
+    border: 1px solid #1f1f2b;
+    height: 48px;
+    font-family: "Gilroy";
+    font-weight: 600;
+    font-size: 26px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  &-list {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+
+    a {
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      padding: 10px 8px;
+      @extend .transition-1;
+      @extend .link-light;
+
+      &:hover {
+        background-color: #0f0f16;
+      }
+
+      > span {
+        display: block;
+        padding-left: 9px;
+        padding-right: 9px;
+        font-size: 14px;
+        color: #fff;
+      }
+
+      .icon-square {
+        height: 35px;
+        width: 35px;
+        margin-right: 8px;
+      }
+
+      .username-wrap {
+        word-wrap: break-word;
+      }
+
+      .username {
+        font-family: "Montserrat";
+        font-weight: 500;
+        font-size: 12px;
+        color: #a5b6c3;
+      }
+
+      .point {
+        font-family: "Montserrat";
+        font-weight: 600;
+        font-size: 12px;
+        margin-left: auto;
+        margin-right: 8px;
+        text-align: right;
+        color: #cfcad8;
+      }
+    }
+  }
+}
+
+.chart-btn-group {
+  padding: 6px 8px;
+  border-radius: 4px;
+  background-color: #181820;
+  display: flex;
+  gap: 10px;
+
+  button {
+    width: 34px;
+    height: 22px;
+    color: #a5b6c3;
+    background: transparent;
+    border: none;
+    font-size: 12px;
+
+    &.active {
+      background-color: #12121a;
+      color: #ffffff;
+    }
+  }
+}
+
+.bg-12 {
+  background-color: #121219;
+}
+
+.bg-15 {
+  background-color: #15151e;
+}
+
+.bg-19 {
+  background-color: #191924;
+}
+
+.line-effect {
+  position: relative;
+  padding-left: 16px;
+
+  &:after {
+    content: "";
+    @extend .top-50;
+    @extend .translate-middle-y;
+    position: absolute;
+    left: 0px;
+    background: linear-gradient(
+      to bottom,
+      rgba(11, 11, 18, 0) 0.01%,
+      #1e6aff 52.91%,
+      rgba(11, 11, 18, 0) 101.14%
+    );
+    height: 100%;
+    width: 2px;
+  }
+}
+
+.text-muted {
+  color: #a5b6c3;
+}
+
+// Staking
+.staking-tabs {
+  --bs-nav-tabs-border-width: 0px;
+  --bs-nav-tabs-link-active-bg: #191d27;
+
+  padding: 6px;
+  border: 1px solid #202227;
+  background-color: #030305;
+  border-radius: 4px;
+
+  .nav-link {
+    @extend .link-light;
+    font-size: 12px;
+
+    &.active {
+      border-radius: 4px;
+    }
+  }
+}
+
+.staking-from-wrap {
+  background: #000002;
+  border: 0.5px solid #1b1b25;
+  border-radius: 4px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  input {
+    background: transparent;
+    border: none;
+    width: 100%;
+    padding-left: 10px;
+    color: #fff;
+
+    &:focus-within {
+      outline: none;
+    }
+  }
+
+  button {
+    padding: 8px 18px;
+    border-radius: 4px;
+    background: #13131a;
+    color: #fff;
+  }
+}
+
+.staking-form-check {
+  width: 100%;
+
+  input {
+    display: none;
+
+    &:checked + label {
+      @extend .bg-gradient;
+    }
+  }
+
+  label {
+    display: flex;
+    padding: 9px 32px;
+    border-radius: 4px;
+    font-family: "Gilroy";
+    font-weight: 700;
+    font-size: 27px;
+    width: 100%;
+    border: 1px solid #121212;
+
+    @media screen and (max-width: 767px) {
+      font-size: 20px;
+      padding: 9px;
+    }
+  }
+}
+
+.staking-deposit {
+  background: #171721;
+  border: 1px solid #252533;
+  border-radius: 8px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a5b6c3;
+  font-weight: 600;
+  font-size: 14px;
+
+  &-title {
+    font-weight: 600;
+    font-size: 14px;
+    opacity: 0.75;
+  }
+}
+
+// Rank Bonus
+.rank-bonus-area {
+  border-radius: 8px;
+  border: 1px solid #191920;
+  color: #cfcad8;
+  padding: 32px 36px;
+
+  .highlight {
+    border-radius: 8px;
+    background-color: #0d0d0f;
+    padding: 8px 16px;
+    display: inline-flex;
+  }
+
+  span {
+    color: #fff;
+  }
+}
+
+// Table
+.evc-table {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+
+  td,
+  th {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    white-space: nowrap;
+    vertical-align: middle;
+
+    &:first-child {
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+      padding-left: 30px;
+    }
+
+    &:last-child {
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      padding-right: 30px;
+    }
+  }
+
+  thead {
+    tr th {
+      font-weight: 500;
+      opacity: 0.7;
+    }
+  }
+
+  tbody {
+    tr {
+      background-color: #171721;
+    }
+  }
+}
+
+.tableRow {
+  transition: background-color 0.3s, border-color 0.3s;
+  background-color: #3a3a3a;
+  border-color: #02db5b;
+}
+
+.tableRow:hover {
+  background-color: #3a3a3a;
+  border-color: #02db5b;
+}
+
+.lalala {
+  font-size: 12px;
+}
+@media screen and (max-width: 1000px) {
+  .lalala {
+    font-size: 34px !important;
+  }
+}
+
+.evc-title {
+}
+@media screen and (max-width: 1000px) {
+  .evc-title {
+    font-size: 34px !important;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .evc-tit {
+    font-size: 24px !important;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .evc-price-title {
+    font-size: 24px !important;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .evc-no {
+    font-size: 24px !important;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .evc-bv-title {
+    font-size: 24px !important;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .avatar-mint-reward {
+    font-size: 29px;
+  }
+  .avatar-mint-num {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .css-1ygcj2i-MuiTableCell-root {
+    font-size: 1.47rem !important;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .dollarValue {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .rank-bonus {
+    font-size: 28px;
+  }
+  .rank-bonus-num {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .team-statics-text {
+    font-size: 1.6rem;
+  }
+  .team-statics-tet {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .ref-link-text {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .stake-text{
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .stake-txt{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .custom-gap-md{
+    gap: 1.2rem !important;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .nav-font-size{
+    font-size: 17px !important;
+  }
+}
+
+
+@media screen and (max-width: 991px) {
+  .nav-tata{
+      font-size: 20px!important;
+  }
+}
+  

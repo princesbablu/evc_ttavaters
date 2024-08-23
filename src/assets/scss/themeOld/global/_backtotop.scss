@@ -1,0 +1,9 @@
+.backToTop {
+    @extend .position-fixed;
+    @extend .bottom-0;
+    @extend .end-0;
+    @extend .mb-4;
+    @extend .me-4;
+    @extend .cursor-pointer;
+    @extend .z-3;
+}

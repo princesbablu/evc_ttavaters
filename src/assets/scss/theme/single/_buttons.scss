@@ -1,0 +1,51 @@
+.btn {
+    // --bs-btn-border-width: 0px;
+    transition: .25s linear;
+    --bs-btn-padding-x: 26px;
+    --bs-btn-padding-y: 9px;
+    --bs-border-width: 0px;
+    background: linear-gradient(149.3deg, #02DB5B -29.94%, #4977C1 135.03%);
+
+
+    &:hover {
+        transform: translateY(-4px);
+    }
+
+    &-primary {
+        @extend .bg-gradient;
+    }
+
+    &-sm {
+        --bs-btn-padding-x: 10px;
+        --bs-btn-padding-y: 6px;
+        font-size: 10px;
+    }
+
+    &-wide {
+        min-width: 174px;
+    }
+
+    &-gradient {
+        position: relative;
+        z-index: 1;
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 1px;
+            left: 1px;
+            width: calc(100% - 2px);
+            height: calc(100% - 2px);
+            border-radius: inherit;
+            background: var(--bs-body-bg);
+            z-index: -1;
+            @extend .transition-1;
+        }
+
+        &:hover {
+            &:after {
+                opacity: 0;
+            }
+        }
+    }
+}

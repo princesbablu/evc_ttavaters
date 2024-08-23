@@ -1,0 +1,114 @@
+.dashboard-wrap {
+    padding-top: 72px;
+}
+
+.cbd-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 72px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    background-color: #2c2c31;
+    z-index: 99;
+
+    @media screen and (max-width: 767px) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .nav-logo {
+        @media screen and (max-width: 767px) {
+            width: 140px;
+        }
+
+        @media screen and (max-width: 480px) {
+            width: 115px;
+        }
+    }
+
+    .icon-notification {
+        padding: 12px;
+        background-color: #1F1F2C;
+        color: #CFCAD8;
+        @media screen and (max-width: 991px) {
+            padding: 0px;
+        }
+
+        &:hover {
+          
+            background-color: #1F1F2C !important;
+            color: #CFCAD8 !important;
+        }
+    }
+
+    //Notification css 
+
+    .dropdown-content {
+        width: 400px; /* adjust the width to your liking */
+      }
+      
+      .notification-item {
+        border-bottom: 1px solid #ddd;
+        padding: 10px;
+        cursor: pointer; /* make the notification item clickable */
+      }
+      
+      .notification-item:hover {
+        background: linear-gradient(180deg, rgba(217, 217, 217, 0.25) 0%, rgba(217, 217, 217, 0.25) 100%);
+        border: 1px solid #02DB5B !important; 
+      }
+      
+      .notification-text {
+        font-size: 14px;
+        font-weight: 400;
+        color: #333;
+      }
+      
+      .notification-time {
+        font-size: 12px;
+        font-weight: 300;
+        color: #666;
+      }
+
+    .btn {
+        --bs-btn-padding-x: 16px;
+        --bs-btn-padding-y: 10px;
+        font-size: 14px;
+    }
+
+   
+}
+
+.text-sm {
+    font-size: 10px;
+    @media screen and (max-width: 991px) {
+        font-size: 14px;
+    }
+}
+
+.text-14 {
+    font-size: 14px;
+}
+
+.text-md {
+    font-size: 12px;
+}
+
+.dropdown-item:active,
+.dropdown-item:focus,
+.dropdown-item.active {
+    background: linear-gradient(274.15deg, #48C564 0%, #8AC640 100%);
+}
+
+@media screen and (max-width: 991px) {
+    .page-title{
+        font-size: 18px;
+        width: 150px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .nav-tata{
+        font-size: 20px;
+    }
+}

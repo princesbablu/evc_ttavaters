@@ -1,0 +1,66 @@
+.image-effect {
+    @extend .d-inline-flex;
+    @extend .position-relative;
+    @extend .z-1;
+    margin-left: 60px;
+    margin-top: 20px;
+
+    &:after {
+        content: "";
+        @extend .position-absolute;
+        @extend .top-0;
+        @extend .start-0;
+        @extend .h-100;
+        @extend .w-100;
+        @extend .rounded;
+        // @extend .bg-gradient;
+        @extend .z-n1;
+        transform: rotate(-3.5deg) translate(1px, -26px);
+        background: linear-gradient(149.3deg, #02DB5B -29.94%, #4977C1 135.03%);
+
+        transform-origin: bottom right;
+    }
+    &-2 {
+        margin: 0;
+        &:after {
+            transform: scale(0.96) translate(-18px, -10px);
+            @extend .rounded-4;
+
+
+        }
+    }
+}
+
+.animate-beat {
+    animation: beat 1s linear infinite;
+}
+
+@keyframes beat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.01);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.image-video-layer {
+    @extend .position-relative;
+    @extend .cursor-pointer;
+    .icon {
+        content: "";
+        @extend .position-absolute;
+        @extend .start-50;
+        @extend .top-50;
+        @extend .translate-middle;
+        @extend .icon-square;
+        @extend .icon-circle;
+        @extend .icon-lg;
+        @extend .bg-white;
+        @extend .text-dark;
+        padding-left: 6px;
+    }
+}

@@ -1,0 +1,99 @@
+.section-title {
+    
+    margin-bottom: 60px;
+
+    @media screen and (max-width: 991px) {
+        margin-bottom: 30px;
+    }
+
+    .pre-title {
+        text-transform: uppercase;
+        letter-spacing: .05em;
+        font-weight: 500;
+        margin-bottom: 6px;
+    }
+
+    .main-title {
+        font-size: 52px;
+        font-weight: 600;
+        line-height: 1.2;
+
+        @media screen and (max-width: 991px) {
+            font-size: 42px;
+        }
+
+        @media screen and (max-width: 575px) {
+            font-size: 28px;
+        }
+    }
+
+    .sub-title {
+        margin-top: 20px;
+        width: 50%;
+        @extend .text-secondary;
+
+        @media screen and (max-width: 991px) {
+            font-size: 42px;
+        }
+
+        @media screen and (max-width: 575px) {
+            font-size: 28px;
+        }
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
+    }
+
+    &.text-center {
+        .sub-title {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    &.text-end {
+        .sub-title {
+            margin-left: auto;
+        }
+    } 
+
+    &.mb {
+        &-sm {
+            margin-bottom: 20px;
+        }
+
+        &-md {
+            margin-bottom: 40px;
+        }
+
+        &-lg {
+            margin-bottom: 80px;
+        }
+
+        &-xl {
+            margin-bottom: 100px;
+        }
+    }
+}
+
+.theme-hero {
+    .section-title {
+        .sub-title {
+            font-size: 22px;
+        }
+    }
+}
+
+.theme-about {
+    .section-title {
+        .main-title {
+            font-size: 43px;
+        }
+    }
+    // background-color:#201F24 ;
+    background-image: url('../../../img/regular/aboutusbg.svg');
+    display: flex;
+    flex-wrap: wrap;
+
+
+}

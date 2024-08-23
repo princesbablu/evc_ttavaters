@@ -1,0 +1,43 @@
+@import './settings';
+@import './header';
+@import './footer';
+@import './backtotop';
+
+
+
+
+.btn-primary{
+    background: linear-gradient(149.3deg, #02DB5B -29.94%, #4977C1 135.03%);
+    color: white;
+
+}
+.btn-outline{
+    border-radius: "8px";
+    border-color: #02DB5B;
+    background-color: transparent;
+    color:white;
+}
+
+.active-dash{
+    background: linear-gradient(149.3deg, #02DB5B -29.94%, #4977C1 135.03%); 
+    border-radius: 5px;  
+    padding-left: 4px;
+    padding-right: 4px;
+   
+        .sidebar-span{
+           
+              color: white !important;
+            
+          }
+
+}
+.active{
+     background-color:transparent;
+     border-bottom:2px;
+     border-color: 325a98e;
+}
+@media screen and (max-width: 991px) {
+    .sidebar-span {
+      font-size: 25px !important;
+    }
+  }

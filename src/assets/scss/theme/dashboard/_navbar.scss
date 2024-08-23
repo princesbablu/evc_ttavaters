@@ -1,0 +1,193 @@
+.dashboard-wrap {
+    padding-top: 72px;
+}
+
+.page-title {
+    @include font-20;
+    color: #F7FFFA;
+    font-weight: 500;
+}
+
+.cbd-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    @media screen and (max-width: 767px) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    &-left {
+        background-color: #2C2C31;
+        width: 248px;
+        flex: 0 0 auto;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        padding: 0 30px;
+        @include mmd {
+            background-color: #201F24;
+            height: 108px;
+        }
+    }
+    &-right {
+        width: calc(100% - 248px);
+        flex: 0 0 auto;
+        background-color: #201F24;
+        padding-left: 50px;
+        padding-right: 40px;
+        padding-top: 20px;
+        padding-bottom: 25px;
+        margin-right: 40px;
+        position: relative;
+        z-index: 1;
+        &::before {
+            content: "";
+            width: calc(100% - 90px);
+            height: 100%;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            border-bottom: 1px solid #2C2C31;
+        }
+    }
+    &-hasDropdown {
+        &:hover {
+            & .cbd-navbar-profile-dropdown {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+            }
+            & .cbd-navbar-profile {
+                border-top-left-radius: 10px !important;
+                border-top-right-radius: 10px !important;
+                border-bottom-left-radius: 0 !important;
+                border-bottom-right-radius: 0 !important;
+            }
+        }
+    }
+    &-profile {
+        background-color: #2C2C31;
+        border: 1px solid #2C2C31;
+        border-radius: 100px;
+        padding: 8px;
+        padding-right: 10px;
+        transition: all .3s ease-in-out;
+        & .icon-user {
+            --width: 24px;
+            width: var(--width);
+            height: var(--width);
+            flex: 0 0 auto;
+            @include img(cover)
+        }
+        &-dropdown {
+            background-color: #2C2C31;
+            list-style: none;
+            padding: 10px;
+            border-radius: 0 0 10px 10px;
+            visibility: hidden;
+            opacity: 0;
+            transition: all .3s ease-in-out;
+            transform: translateY(20px);
+            & a,
+            & button {
+                display: block;
+                font-size: 16px;
+                line-height: 150%;
+                padding: 8px 16px;
+                color: $text;
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
+    .nav-tata {
+        text-transform: capitalize !important;
+        color: rgba($color: $white, $alpha: .80);
+    }
+    .nav-logo {
+        @media screen and (max-width: 767px) {
+            width: 140px;
+        }
+        @media screen and (max-width: 480px) {
+            width: 115px;
+        }
+    }
+    .icon-notification {
+        padding: 0;
+        border: 1px solid #2C2C31;
+        color: #A3A3A3;
+        font-size: 18px;
+        &:hover {
+            background-color: #1F1F2C !important;
+            color: #CFCAD8 !important;
+        }
+    }
+    //Notification css 
+    .dropdown-content {
+        width: 400px;
+        /* adjust the width to your liking */
+    }
+    .notification-item {
+        border-bottom: 1px solid #ddd;
+        padding: 10px;
+        cursor: pointer;
+        /* make the notification item clickable */
+    }
+    .notification-item:hover {
+        background: linear-gradient(180deg, rgba(217, 217, 217, 0.25) 0%, rgba(217, 217, 217, 0.25) 100%);
+        border: 1px solid #02DB5B !important;
+    }
+    .notification-text {
+        font-size: 14px;
+        font-weight: 400;
+        color: #333;
+    }
+    .notification-time {
+        font-size: 12px;
+        font-weight: 300;
+        color: #666;
+    }
+    .btn {
+        --bs-btn-padding-x: 16px;
+        --bs-btn-padding-y: 10px;
+        font-size: 14px;
+    }
+}
+
+.text-sm {
+    font-size: 10px;
+    @media screen and (max-width: 991px) {
+        font-size: 14px;
+    }
+}
+
+.text-14 {
+    font-size: 14px;
+}
+
+.text-md {
+    font-size: 12px;
+}
+
+.dropdown-item:active,
+.dropdown-item:focus,
+.dropdown-item.active {
+    background: linear-gradient(274.15deg, #48C564 0%, #8AC640 100%);
+}
+
+@media screen and (max-width: 991px) {
+    .page-title {
+        font-size: 18px;
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .nav-tata {
+        font-size: 20px;
+    }
+}

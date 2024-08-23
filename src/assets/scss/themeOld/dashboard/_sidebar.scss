@@ -1,0 +1,12 @@
+.dashboard-wrap {
+    padding-left: 248px;
+    @media screen and (max-width: 991px) {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .sidebar-list {
+        gap: 10px;
+    }
+}

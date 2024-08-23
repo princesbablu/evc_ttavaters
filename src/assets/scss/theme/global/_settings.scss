@@ -1,0 +1,98 @@
+// GLOBAL CHANGES
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import 'fonts/stylesheet.css';
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+$font-1:"DM Sans",
+sans-serif;
+$text: #A3A3A3;
+$primary:#60C37C;
+:root {
+    --bs-font-sans-serif: 'Montserrat', sans-serif;
+    --bs-border-color: #161921;
+}
+
+[data-bs-theme=dark] {
+    --bs-border-color: #161921;
+}
+
+body {
+    font-family: $font-1;
+    font-size: 14px;
+    color: $text;
+    overflow-x: hidden;
+    background-color: #201F24 !important
+}
+
+// SINGLE CLASSES
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.bg-gradient {
+    --bs-gradient: linear-gradient(270deg, #1440DB 0%, #1E6AFF 102.73%);
+}
+
+.text-gradient {
+    @extend .d-inline-block;
+    @extend .bg-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.img-fluid {
+    width: auto;
+    border-radius: 11px;
+}
+
+.transition-1 {
+    transition: .25s linear;
+}
+
+.section-gap {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    @media screen {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    &-social {
+        padding-bottom: 330px;
+        @media screen {
+            padding-bottom: 160px;
+        }
+    }
+}
+
+.bg-pattern {
+    background-image: url('../../../img/regular/roadmap.svg');
+    background-size: cover;
+    background-position: center center;
+    &.roadmap {
+        background-image: url('../../../img/regular/roadmap.svg');
+    }
+}
+
+.g-32 {
+    --bs-gutter-x: 32px;
+    --bs-gutter-y: 32px;
+}
+
+.breadcrumb {
+    padding: 15px 32px;
+    font-size: 12px;
+    border-bottom: 1px solid #191920;
+    margin-bottom: 28px;
+    --bs-breadcrumb-item-active-color: #fff;
+    a {
+        color: #A5B6C3;
+    }
+}
+
+.font-gilroy {
+    font-family: "Gilroy", sans-serif;
+}
+
+.list-group {
+    --bs-list-group-border-color: #191919;
+}

@@ -1,0 +1,19 @@
+.theme-footer {
+    .footer-top {
+        padding-top: 90px;
+        padding-bottom: 50px;
+    }
+}
+
+.footer-bottom {
+    padding-top: 25px;
+    padding-bottom: 80px;
+}
+
+.footer-logo {
+    max-width: 220px;
+
+    @media screen and (max-width: 575px) {
+        max-width: 160px;
+    }
+}
