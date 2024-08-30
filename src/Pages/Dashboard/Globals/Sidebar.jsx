@@ -292,7 +292,18 @@ const Sidebar = ({ sideToggle, setSideToggle, presaleBalanceOf }) => {
               }
             >
               <div className="icon">
-                <Sidebar13 />
+                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_3906_762)">
+                    <path d="M5.86426 7.5C5.86426 8.82608 6.39104 10.0979 7.32872 11.0355C8.26641 11.9732 9.53818 12.5 10.8643 12.5C12.1903 12.5 13.4621 11.9732 14.3998 11.0355C15.3375 10.0979 15.8643 8.82608 15.8643 7.5C15.8643 6.17392 15.3375 4.90215 14.3998 3.96447C13.4621 3.02678 12.1903 2.5 10.8643 2.5C9.53818 2.5 8.26641 3.02678 7.32872 3.96447C6.39104 4.90215 5.86426 6.17392 5.86426 7.5Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M10.8643 12.5L13.6976 17.4083L15.0293 14.7142L18.0276 14.9075L15.1943 10" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M6.53255 10L3.69922 14.9083L6.69755 14.7142L8.02922 17.4075L10.8626 12.5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_3906_762">
+                      <rect width="20" height="20" fill="white" transform="translate(0.864258)" />
+                    </clipPath>
+                  </defs>
+                </svg>
               </div>
               <span
                 className="sidebar-span"
